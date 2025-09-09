@@ -1,0 +1,15 @@
+{
+  "name": "cangjie-docs",
+  "version": "1.0.0",
+  "description": "仓颉文档转换器",
+  "type": "module",
+  "scripts": {
+    "dev": "vitepress dev docs",
+    "build": "vitepress build docs",
+    "preview": "vitepress preview docs",
+    "crawl": "cd crawler && python main.py"
+  },
+  "devDependencies": {
+    "vitepress": "^1.0.0"
+  }
+}
