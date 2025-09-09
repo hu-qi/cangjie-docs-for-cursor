@@ -271,7 +271,7 @@ VSCode 中可视化方式提供的仓颉功能编译构建能力依赖 cjpm 工�
 
   * 直接修改 `cjpm.toml` 和 `cjpm_build_args.json` 文件。
 
-![editOne](./images/editOne.png)
+![editOne](./images/editone.png)
 
   * 使用快捷键 F1，或同时按下 Ctrl + Shift + P（macOS 系统为 Command + Shift + P）打开命令面板，在命令面板执行 `Cangjie: Edit Configuration (UI)` 命令打开可视化编辑的 UI 界面。
 
