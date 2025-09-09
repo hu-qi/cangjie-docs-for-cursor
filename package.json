@@ -2,6 +2,7 @@
   "name": "cangjie-docs",
   "version": "1.0.0",
   "description": "仓颉文档转换器",
+  "author": "huqi1024@gmail.com",
   "type": "module",
   "scripts": {
     "dev": "vitepress dev docs",
