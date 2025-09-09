@@ -131,7 +131,7 @@ T 为 泛型参数，用于在对象中查找对应类型的值。
     
     public func toString(): String
     
-功能：该对象的字符化对象，当内部对象未实现 [ToString](https://docs.cangjie-lang.cn/docs/1.0.1/libs/std/core/core_package_api/core_package_interfaces.html#interface-tostring) 接口时，输出 '<not printable>' 。
+功能：该对象的字符化对象，当内部对象未实现 [ToString](https://docs.cangjie-lang.cn/docs/1.0.1/libs/std/core/core_package_api/core_package_interfaces.html#interface-tostring) 接口时，输出 `<not printable>` 。
 
 返回值：
 

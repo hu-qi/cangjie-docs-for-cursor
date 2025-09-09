@@ -1265,7 +1265,7 @@ aarch64-linux-gnu| x86\_64-windows-gnu
     
     <original_symbol_name> <new_symbol_name>
     
-其中 `original_symbol_name` 是混淆前的名称，`new_symbol_name` 是混淆后的名称。`original_symbol_name` 由多个 `field` 组成。`field` 表示字段名，可以是模块名、包名、类名、结构体名、枚举名、函数名或变量名。`field` 之间用分隔符 `'.'` 分隔。如果 `field` 是函数名，则需要将函数的参数类型用括号 `'()'` 修饰并附加在函数名后面。对于无参函数括号内的内容为空。如果 `field` 存在泛型参数，也需要用括号 `'<>'` 将具体的泛型参数附加在 `field` 后面。
+其中 `original_symbol_name` 是混淆前的名称，`new_symbol_name` 是混淆后的名称。`original_symbol_name` 由多个 `field` 组成。`field` 表示字段名，可以是模块名、包名、类名、结构体名、枚举名、函数名或变量名。`field` 之间用分隔符 `'.'` 分隔。如果 `field` 是函数名，则需要将函数的参数类型用括号 `'()'` 修饰并附加在函数名后面。对于无参函数括号内的内容为空。如果 `field` 存在泛型参数，也需要用括号 `<>` 将具体的泛型参数附加在 `field` 后面。
 
 外形混淆功能会将仓颉应用中的 `original_symbol_name` 替换为 `new_symbol_name`。对于不在该文件中的符号，外形混淆功能会正常使用随机名称进行替换。如果该文件中指定的映射关系和 `--obf-sym-input-mapping` 中的映射关系相冲突，编译器会抛出异常并停止编译。
 

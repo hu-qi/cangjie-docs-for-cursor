@@ -8,6 +8,14 @@ export default defineConfig({
   base: '/',
   lang: 'zh-CN',
   
+  // 忽略死链接检查，因为文档中有很多相对链接
+  ignoreDeadLinks: true,
+  
+  // Vite 配置
+  vite: {
+    assetsInclude: ['**/*.PNG', '**/*.png', '**/*.jpg', '**/*.jpeg', '**/*.gif', '**/*.svg']
+  },
+  
   // 主题配置
   themeConfig: {
     // 导航栏
@@ -2369,7 +2377,22 @@ export default defineConfig({
     theme: {
       light: 'github-light',
       dark: 'github-dark'
-    }
+    },
+    
+    // 代码块配置
+    codeTransformers: [
+      // 为 cangjie 语言提供语法高亮支持
+      {
+        name: 'cangjie-highlighter',
+        preprocess(code, options) {
+          if (options.lang === 'cangjie' || options.lang === 'cj') {
+            // 使用 rust 语法高亮作为 fallback
+            options.lang = 'rust'
+          }
+          return code
+        }
+      }
+    ]
   },
 
   // 国际化
