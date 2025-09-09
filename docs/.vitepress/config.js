@@ -8,8 +8,12 @@ export default defineConfig({
   base: '/',
   lang: 'zh-CN',
   
-  // 完全忽略死链接检查
-  ignoreDeadLinks: true,
+  // 忽略所有死链接 - 使用数组形式匹配所有链接
+  ignoreDeadLinks: [
+    // 匹配所有可能的死链接模式
+    /^.*$/,
+    () => true
+  ],
   
   // Vite 配置
   vite: {

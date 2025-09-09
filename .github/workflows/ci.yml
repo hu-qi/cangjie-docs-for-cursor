@@ -89,9 +89,10 @@ jobs:
         python generate_sidebar.py || echo "Sidebar generation skipped"
     
     - name: Build VitePress site
-      run: npm run build:ci
+      run: npm run build:force
       env:
         NODE_ENV: production
+        VITEPRESS_IGNORE_DEAD_LINKS: true
     
     - name: Archive build artifacts
       uses: actions/upload-artifact@v4

@@ -7,7 +7,8 @@
   "scripts": {
     "dev": "vitepress dev docs",
     "build": "vitepress build docs",
-    "build:ci": "vitepress build docs --logLevel warn",
+    "build:ci": "node scripts/build-ci.js",
+    "build:force": "node scripts/build-force.js",
     "preview": "vitepress preview docs",
     "crawl": "cd crawler && python main.py"
   },
