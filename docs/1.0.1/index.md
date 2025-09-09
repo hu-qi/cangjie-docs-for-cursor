@@ -62,5 +62,5 @@
 ## 🔗 相关链接
 
 - [仓颉官方网站](https://cangjie-lang.cn/)
-- [仓颉社区](https://www.hicangjie.com/)
-- [GitHub 仓库](https://github.com/cangjie-lang)
+- [仓颉社区](https://gitcode.com/Cangjie/UsersForum)
+- [GitCode 仓库](https://gitcode.com/cangjie)

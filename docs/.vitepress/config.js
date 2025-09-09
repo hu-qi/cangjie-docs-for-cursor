@@ -2342,7 +2342,7 @@ export default defineConfig({
 
     // 社交链接
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/cangjie-lang' }
+      { icon: 'github', link: 'https://github.com/hu-qi/cangjie-docs-for-cursor' }
     ],
 
     // 搜索
