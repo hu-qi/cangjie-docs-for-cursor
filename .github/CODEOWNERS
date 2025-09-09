@@ -1,0 +1,23 @@
+# CODEOWNERS for cangjie-docs-for-cursor
+# 这个文件定义了代码库中不同部分的负责人
+
+# 默认负责人
+* @hu-qi @qoder
+
+# 爬虫相关代码
+/crawler/ @hu-qi @qoder
+
+# 文档相关
+/docs/ @hu-qi @qoder
+
+# 配置文件
+package.json @hu-qi @qoder
+package-lock.json @hu-qi @qoder
+
+# GitHub Actions 工作流
+/.github/workflows/ @hu-qi @qoder
+
+# README 和其他文档
+README.md @hu-qi @qoder
+LICENSE @hu-qi @qoder
+CONTRIBUTING.md @hu-qi @qoder
