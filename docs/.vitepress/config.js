@@ -8,7 +8,7 @@ export default defineConfig({
   base: '/',
   lang: 'zh-CN',
   
-  // 忽略死链接检查，因为文档中有很多相对链接
+  // 完全忽略死链接检查
   ignoreDeadLinks: true,
   
   // Vite 配置
