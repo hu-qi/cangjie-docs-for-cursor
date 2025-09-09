@@ -23,7 +23,7 @@
 
 **第一步：选择创建仓颉工程命令**
 
-![createProject_1](./images/createProject_1.PNG)
+![createProject_1](./images/createProject_1.png)
 
 **第二步：选择仓颉后端**
 
@@ -31,11 +31,11 @@
 
 **第三步：选择工程模板**
 
-![createProject_3](./images/createProject_3.PNG)
+![createProject_3](./images/createProject_3.png)
 
 **第四步：选择工程路径**
 
-![createProject_4](./images/createProject_4.PNG)
+![createProject_4](./images/createProject_4.png)
 
 **第五步：输入工程名称**
 
@@ -43,7 +43,7 @@
 
 **第六步：完成创建并打开**
 
-![createProject_6](./images/createProject_6.PNG)
+![createProject_6](./images/createProject_6.png)
 
 ## 使用可视化界面
 
@@ -51,24 +51,24 @@
 
 **第一步：选择创建仓颉可视化工程命令**
 
-![createProjectView_1](./images/createProjectView_1.PNG)
+![createProjectView_1](./images/createProjectView_1.png)
 
 **第二步：打开可视化创建仓颉工程界面**
 
-![createProjectView_2](./images/createProjectView_2.PNG)
+![createProjectView_2](./images/createProjectView_2.png)
 
 **第三步：选择工程模板**
 
-![createProjectView_4](./images/createProjectView_4.PNG)
+![createProjectView_4](./images/createProjectView_4.png)
 
 **第四步：选择工程路径**
 
-![createProjectView_5](./images/createProjectView_5.PNG)
+![createProjectView_5](./images/createProjectView_5.png)
 
 **第五步：输入工程名称**
 
-![createProjectView_6](./images/createProjectView_6.PNG)
+![createProjectView_6](./images/createProjectView_6.png)
 
 **第六步：单击 Confirm 完成创建并打开**
 
-![createProjectView_7](./images/createProjectView_7.PNG)
+![createProjectView_7](./images/createProjectView_7.png)

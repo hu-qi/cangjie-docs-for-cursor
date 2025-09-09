@@ -13,7 +13,7 @@ export default defineConfig({
   
   // Vite 配置
   vite: {
-    assetsInclude: ['**/*.PNG', '**/*.png', '**/*.jpg', '**/*.jpeg', '**/*.gif', '**/*.svg']
+    assetsInclude: ['**/*.PNG', '**/*.png', '**/*.jpg', '**/*.jpeg', '**/*.gif', '**/*.svg', '**/*.webp']
   },
   
   // 主题配置

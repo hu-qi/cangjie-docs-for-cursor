@@ -150,15 +150,15 @@ macOS\_AArch64 平台的 SDK 下载内容为：`cangjie-sdk-mac-aarch64-x.y.z.ta
 
 安装完仓颉插件后，即可配置 SDK 的路径。单击左下角齿轮图标，选择设置选项。
 
-![setVS](./images/setVS.PNG)
+![setVS](./images/setVS.png)
 
 或直接右键单击插件，选择 Extension Settings，进入配置页面。
 
-![openSetting](./images/openSetting.PNG)
+![openSetting](./images/openSetting.png)
 
 在搜索栏输入 Cangjie，选择侧边栏的 Cangjie Language Support 选项。
 
-![languageSupportSetting](./images/languageSupportSetting.PNG)
+![languageSupportSetting](./images/languageSupportSetting.png)
 
 **配置 CJNative 后端**
 
@@ -168,14 +168,14 @@ macOS\_AArch64 平台的 SDK 下载内容为：`cangjie-sdk-mac-aarch64-x.y.z.ta
 
   3. 重启 VSCode 生效。
 
-![CJNativeSdkPathSet](./images/CJNativeSdkPathSet.PNG)
+![CJNativeSdkPathSet](./images/CJNativeSdkPathSet.png)
 
 ### 安装验证
 
 通过快捷键 Ctrl + Shift + P（macOS 系统的快捷键为 Command + Shift + P） 调出 VSCode 的命令面板，选择 cangjie: Create Cangjie Project View 命令。
 
-![createProjectView](./images/createProjectView.PNG)
+![createProjectView](./images/createProjectView.png)
 
 弹出创建仓颉项目页面，说明仓颉 SDK 安装成功。
 
-![sdkSuccess](./images/sdkSuccess.PNG)
+![sdkSuccess](./images/sdkSuccess.png)

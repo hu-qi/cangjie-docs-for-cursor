@@ -21,7 +21,7 @@
 
 VSCode 打开仓颉工程中的 .cj 文件，即可看到代码高亮效果。VSCode 不同主题显示的代码高亮颜色不同，支持对代码运算符、类、注释、函数、关键字、数字、包名、字符串、变量等进行高亮显示。
 
-![sema](./images/sema.PNG)
+![sema](./images/sema.png)
 
 ## 自动补全
 
@@ -29,17 +29,17 @@ VSCode 打开仓颉工程中的 .cj 文件，输入关键字、变量或 . 符�
 
 ![compelte1](./images/complete1.png)
 
-![complete2](./images/complete2.PNG)
+![complete2](./images/complete2.png)
 
 对于带参数的函数或者泛型提供模块化补齐，即当函数有参数或者带泛型时，选择函数补齐项之后会出现参数格式化补齐，如下图所示。填充数值之后按下 Tab 键可以切换到下一个参数补齐，直至模块化补齐结束，或按下 Esc 键提前退出除当前选中模块。
 
-![completeFormat](./images/completeFormat.PNG)
+![completeFormat](./images/completeFormat.png)
 
 ## 定义跳转
 
 VSCode 打开仓颉工程中的 .cj 文件，鼠标悬停在目标上方，按下 Ctrl 键并单击鼠标左键触发定义跳转；或使用鼠标右键单击目标符号，选择 Go to Definition 执行定义跳转；或按下快捷键 F12 执行定义跳转。
 
-![definition](./images/definition.PNG)
+![definition](./images/definition.png)
 
 > **说明：**
 > 
@@ -49,35 +49,35 @@ VSCode 打开仓颉工程中的 .cj 文件，鼠标悬停在目标上方，按�
 
 VSCode 打开仓颉工程中的 .cj 文件，使用鼠标右键单击目标符号，选择 Find All References 执行符号引用预览，单击预览条目，可以跳转到对应引用处。
 
-![reference](./images/reference.PNG)
+![reference](./images/reference.png)
 
 ## 诊断报错
 
 VSCode 打开仓颉工程中的 .cj 文件，当源码文件出现不符合仓颉语法或语义规则的代码时，会在相关代码段出现红色波浪下划线，如下图所示，当鼠标悬停在上面，可以提示相应的报错信息。修改正确后，诊断报错自行消失。
 
-![diag](./images/diag.PNG)
+![diag](./images/diag.png)
 
 ## 选中高亮
 
 VSCode 打开仓颉工程中的 .cj 文件，光标定位在一个变量或函数名处，当前文件中该变量的声明处以及其使用处都会高亮显示。
 
-![docHighlight](./images/docHighlight.PNG)
+![docHighlight](./images/docHighlight.png)
 
 ## 悬浮提示
 
 VSCode 打开仓颉工程中的 .cj 文件，光标悬浮在变量处，可以提示类型信息。
 
-![hover1](./images/hover1.PNG)
+![hover1](./images/hover1.png)
 
 悬浮在函数名处，可以提示函数原型。
 
-![hover2](./images/hover2.PNG)
+![hover2](./images/hover2.png)
 
 ## 定义搜索
 
 VSCode 打开仓颉工程中的 .cj 文件，同时按下 Ctrl 键和 T 键，弹出搜索框，输入想要搜索的符号定义名，会显示出符合条件的搜索结果。单击搜索结果条目，可以跳转到对应的定义位置处。
 
-![searchsymbol_open](./images/searchsymbol_open.PNG)
+![searchsymbol_open](./images/searchsymbol_open.png)
 
 目前支持搜索的定义类型有：class、interface、enum、struct、typealias、toplevel 的函数、toplevel 的变量、prop、enum 构造器、成员函数和成员变量。
 
@@ -85,11 +85,11 @@ VSCode 打开仓颉工程中的 .cj 文件，同时按下 Ctrl 键和 T 键，�
 
 VSCode 打开仓颉工程中的 .cj 文件，光标定位在想要修改的自定义名称上，右键选择 Rename Symbol 或按下快捷键 F2 打开重命名编辑框。
 
-![prepareRename](./images/prepareRename.PNG)
+![prepareRename](./images/prepareRename.png)
 
 编辑完毕按下回车键，完成重命名的实现。
 
-![onRename](./images/onRename.PNG)
+![onRename](./images/onRename.png)
 
 目前支持重命名的类型有：class、interface、enum、struct、func、type、泛型、变量和自定义宏。
 
@@ -97,7 +97,7 @@ VSCode 打开仓颉工程中的 .cj 文件，光标定位在想要修改的自�
 
 VSCode 打开仓颉工程中的 .cj 文件，在左侧 OUTLINE 视图中显示当前文件的大纲。目前支持两层结构的显示，第一层主要为 toplevel 中定义的声明，第二层主要为构造器及成员。
 
-![outline](./images/outline.PNG)
+![outline](./images/outline.png)
 
 目前支持大纲视图显示的类型有：class、interface、enum、struct、typealias、toplevel 的函数、toplevel 的变量、prop、enum 构造器、成员函数和成员变量。
 
@@ -105,7 +105,7 @@ VSCode 打开仓颉工程中的 .cj 文件，在左侧 OUTLINE 视图中显示�
 
 VSCode 打开仓颉工程中的任意 .cj 文件，光标定位在符号处，点击面包屑导航，显示符号当前所处的位置，以及该符号在整个工程中的位置路径。
 
-![Breadcrumb](./images/Breadcrumb.PNG)
+![Breadcrumb](./images/Breadcrumb.png)
 
 目前支持面包屑导航的类型有：class、interface、enum、struct、typealias、toplevel 的函数、toplevel 的变量、prop、enum 构造器、成员函数和成员变量。
 
@@ -113,7 +113,7 @@ VSCode 打开仓颉工程中的任意 .cj 文件，光标定位在符号处，�
 
 VSCode 在输入左括号和逗号时会触发签名帮助。触发后，只要还在函数参数范围内，提示框会一直随光标移动（可与补全共存）。如下图所示，开发者可以看到当前函数的参数信息，以及当前函数位置参数的高亮效果。
 
-![signaturehelp](./images/signaturehelp.PNG)
+![signaturehelp](./images/signaturehelp.png)
 
 ## 显示类型层次结构
 

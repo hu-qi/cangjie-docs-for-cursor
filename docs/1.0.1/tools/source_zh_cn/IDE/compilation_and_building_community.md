@@ -17,7 +17,7 @@ VSCode 中可视化方式提供的仓颉功能编译构建能力依赖 cjpm 工�
 
   * 选择 `Cangjie: Parallelled Build` 选项执行并行编译。
 
-![paralleledBuild](./images/paralleledBuild.PNG)
+![paralleledBuild](./images/paralleledBuild.png)
 
 执行并行编译后，在工程文件夹下会生成 `target` 目录，`target` 目录下有一个 `release` 文件夹，`release` 文件夹下包含三个目录：`.build-logs` 目录、`bin` 目录，以及工程名同名的目录。`bin` 目录下存放可执行文件（可执行文件只有在 `cjpm.toml` 的 `output-type` 为 `executable` 时才会生成），工程名同名目录下存放编译的中间产物。
 
@@ -25,7 +25,7 @@ VSCode 中可视化方式提供的仓颉功能编译构建能力依赖 cjpm 工�
 
   * 选择 `Cangjie: Build With Verbose` 选项执行编译并展示编译日志。
 
-![verbose](./images/verbose.PNG)
+![verbose](./images/verbose.png)
 
 该编译参数除了执行编译外，还会打印编译日志。
 
@@ -39,7 +39,7 @@ VSCode 中可视化方式提供的仓颉功能编译构建能力依赖 cjpm 工�
 
   * 选择 `Cangjie: Build With Alias` 执行编译并指定输出可执行文件的名称。
 
-![alias](./images/alias.PNG)
+![alias](./images/alias.png)
 
 执行该命令，按下回车键后，会弹出一个输入栏，需要开发者为工程的编译结果赋予一个新的名字。该命令只对 `cjpm.toml` 的 `output-type` 为 `executable` 时有效。
 
@@ -49,11 +49,11 @@ VSCode 中可视化方式提供的仓颉功能编译构建能力依赖 cjpm 工�
 
   * 选择 `Cangjie: Build With CustomizedOption` 选项按条件透传 `cjpm.toml` 中的命令。
 
-![cndOption](./images/cndOption.PNG)
+![cndOption](./images/cndOption.png)
 
 使用该选项需要先在 `cjpm.toml` 中配置 `customized-option` 字段。然后在命令面板输入 `Build With CustomizedOption`，按下回车键后可以选择需要的参数，参数可以多选，选择后按下回车键即可。
 
-![chooseOption](./images/chooseOption.PNG)
+![chooseOption](./images/chooseOption.png)
 
 若没有在 `cjpm.toml` 中配置 `customized-option` 字段，并执行了该条命令，插件会提示开发者先配置改字段。
 
@@ -61,11 +61,11 @@ VSCode 中可视化方式提供的仓颉功能编译构建能力依赖 cjpm 工�
 
 选择该命令执行后，可指定编译产物的输出路径，默认不作输入操作则以 `cjpm.toml` 中的 `target-dir` 字段为路径。
 
-![setOutputDir](./images/setOutputDir.PNG)
+![setOutputDir](./images/setOutputDir.png)
 
 当输入的编译产物路径与 cjpm.toml 中的 `target-dir` 字段不同时，会弹出提示是否覆盖 cjpm.toml 中的 `target-dir` 字段。若选择 Yes 覆盖，则会将 cjpm.toml 中 `target-dir` 字段覆盖成输入的值。
 
-![isChangeOutput](./images/isChangeOutput.PNG)
+![isChangeOutput](./images/isChangeOutput.png)
 
 该命令执行成功后，会在指定的路径下生成编译产物。
 
@@ -91,13 +91,13 @@ VSCode 中可视化方式提供的仓颉功能编译构建能力依赖 cjpm 工�
 
 如果叠加的参数中选择了 `cjpm build --output=<name>`，那么需要输入一个别名字符串，然后按下回车键执行叠加命令操作。
 
-![aliasString](./images/aliasString.PNG)
+![aliasString](./images/aliasString.png)
 
 如果叠加参数中选择了 `cjpm build --target=<name>`，那么可以选择一个想要交叉编译的平台。
 
 如果叠加参数中选择了 `cjpm build --<customized-option>`，那么可以选择透传参数。
 
-![addOption](./images/addOption.PNG)
+![addOption](./images/addOption.png)
 
 叠加命令的编译结果就是这些命令分别执行的总和。
 
@@ -117,49 +117,49 @@ VSCode 中可视化方式提供的仓颉功能编译构建能力依赖 cjpm 工�
 
 在选择该条命令后，可以选择指定包路径、模块或者成员执行单元测试。只有打开工作空间，才显示成员选择选项。
 
-![testMultiOptions](./images/testMultiOptions.PNG)
+![testMultiOptions](./images/testMultiOptions.png)
 
 如果选择 `Specify the test paths` 选项，则可以输入指定待测试的包路径。若不需要指定，则直接按 Enter 键。
 
-![testPath](./images/testPath.PNG)
+![testPath](./images/testPath.png)
 
 此步骤可通过输入多个包的路径并用空格分隔，可以实现多包并发单元测试。
 
-![testPathMultiPath](./images/testPathMultiPath.PNG)
+![testPathMultiPath](./images/testPathMultiPath.png)
 
 如果选择 `Specify the test modules` 选项，则可以输入指定待测试的模块。若不需要指定，则直接按 Enter 键。
 
-![testModule](./images/testModule.PNG)
+![testModule](./images/testModule.png)
 
 此步骤可通过输入多个模块并用空格分隔，可以实现多模块单元测试。
 
-![testModuleMultiModule](./images/testModuleMultiModule.PNG)
+![testModuleMultiModule](./images/testModuleMultiModule.png)
 
 如果选择 `Specify a test member` 选项，则可以输入指定待测试的成员。若不需要指定，则直接按 Enter 键。
 
-![testMember](./images/testMember.PNG)
+![testMember](./images/testMember.png)
 
 选择要叠加的参数。
 
-![testParams](./images/testParams.PNG)
+![testParams](./images/testParams.png)
 
 如果选择了 `--filter=<value>` 参数，则需要输入对应的过滤测试子集的表达式。
 
-![testReg](./images/testReg.PNG)
+![testReg](./images/testReg.png)
 
 输入过滤测试子集的表达式后，可以执行 `cjpm test` 的完整命令。执行结果会在 Output 面板输出。
 
 如果在 cjpm.toml 中配置了 `target` 和 `customized-option`，则可以选择的参数有 `--target=<name>` 和 `--<customized-option>`。
 
-![testParamsPlus](./images/testParamsPlus.PNG)
+![testParamsPlus](./images/testParamsPlus.png)
 
 如果选择了 `--target=<name>` 参数，则需要选择对应的平台。
 
-![crossCompileTarget](./images/crossCompileTarget.PNG)
+![crossCompileTarget](./images/crossCompileTarget.png)
 
 如果选择了 `--<customized-option>` 参数，则需要选择条件选项。
 
-![condition](./images/condition.PNG)
+![condition](./images/condition.png)
 
   * 选择 `Cangjie: Clean Build Result` 选项清除编译结果（工程目录下的 build 目录）。
 
@@ -175,29 +175,29 @@ VSCode 中可视化方式提供的仓颉功能编译构建能力依赖 cjpm 工�
 
 在选择该条命令后，在弹出的输入框中输入期望可执行文件的安装路径，最终会将可执行文件安装到输入的自定义路径中。不配置时，Linux 系统和 macOS 系统下默认为 `$HOME/.cjpm`，Windows 系统下默认为 `%USERPROFILE%/.cjpm`。
 
-![installWithRoot](./images/installWithRoot.PNG)
+![installWithRoot](./images/installWithRoot.png)
 
   * 选择 `Cangjie: Install With TargetDir` 选项指定编译产物的存放路径。
 
 安装可执行文件前会先进行编译，选择该条命令后，在弹出的输入框中输入期望编译产物的存放路径，最终会将编译产物安装到输入的自定义路径中。
 
-![InstallWithTarget](./images/InstallWithTarget.PNG)
+![InstallWithTarget](./images/InstallWithTarget.png)
 
   * 选择 `Cangjie: Install With Alias` 选项指定最终安装的产物名。
 
 选择该条命令后，在弹出的输入框中输入期望安装产物的名字。
 
-![installWithAlias](./images/installWithAlias.PNG)
+![installWithAlias](./images/installWithAlias.png)
 
   * 选择 `Cangjie: Install With Git` 选项安装远端 git 代码仓产物。
 
 选择该条命令后，在弹出的输入框中输入远端 git url。
 
-![installWithGit](./images/installWithGit.PNG)
+![installWithGit](./images/installWithGit.png)
 
 输入远端 git url 后，键入回车可进一步选择关于远端 git 代码仓的分支、tag 或 commit 信息。
 
-![installWithGitDetail](./images/installWithGitDetail.PNG)
+![installWithGitDetail](./images/installWithGitDetail.png)
 
 选择自定义代码仓 branch / tag / commit 号选项，在弹出框内输入 branch / tag / commit 号信息，即可安装远端 git 代码仓产物。
 
@@ -209,15 +209,15 @@ VSCode 中可视化方式提供的仓颉功能编译构建能力依赖 cjpm 工�
 
 选择该条命令后，在弹出的输入框中输入期望安装时的最大并发数。
 
-![installWithJobs](./images/installWithJobs.PNG)
+![installWithJobs](./images/installWithJobs.png)
 
   * 选择 `Cangjie: Install With CustomizedOption` 选项按条件透传 `cjpm.toml` 中的命令。
 
-![cndOptionInstall](./images/cndOptionInstall.PNG)
+![cndOptionInstall](./images/cndOptionInstall.png)
 
 使用该选项需要先在 `cjpm.toml` 中配置 `customized-option` 字段。然后在命令面板选择 `Install With CustomizedOption`，按下回车键后可以选择需要的参数，参数可多选，选择后按下回车键即可。
 
-![chooseOptionInstall](./images/chooseOptionInstall.PNG)
+![chooseOptionInstall](./images/chooseOptionInstall.png)
 
 开发者需要在 `cjpm.toml` 中配置 `customized-option` 字段，才能执行该条命令。
 
@@ -227,19 +227,19 @@ VSCode 中可视化方式提供的仓颉功能编译构建能力依赖 cjpm 工�
 
 单击 VSCode 页面左下角齿轮图标，选择设置选项。或直接右键单击插件，选择 Extension Settings，进入配置页面。在搜索栏输入 Cangjie，选择侧边栏的 Cangjie Language Support 选项。该页面有输入框 `Cangjie: Cjpm Install: Custom`，在此输入 `cjpm install` 相关的命令选项，如 `-V -g --name \<value\>`。然后在命令面板选择 `Install With CustomParameter` 命令，最终将该输入框中的内容带到 `cjpm install` 中。
 
-![customInstallParm](./images/customInstallParm.PNG)
+![customInstallParm](./images/customInstallParm.png)
 
   * 选择 `Cangjie: Uninstall Binary` 选项卸载仓颉项目，清除对应的可执行文件和依赖文件。
 
 选择该命令后，在弹出的输入框中输入需要卸载的可执行文件名字。
 
-![UninstallBinary](./images/UninstallBinary.PNG)
+![UninstallBinary](./images/UninstallBinary.png)
 
   * 选择 `Cangjie: Uninstall With Root` 选项指定卸载时搜索的目标路径。
 
 选择该命令后，在弹出的输入框中输入期望卸载时搜索的目标路径，最终会将该路径下的指定可执行文件和依赖文件卸载。不配置时，Linux 系统和 macOS 系统下默认为 $HOME/.cjpm，在 Windows 系统下默认为 `%USERPROFILE%/.cjpm`。
 
-![unstallWithRoot](./images/unstallWithRoot.PNG)
+![unstallWithRoot](./images/unstallWithRoot.png)
 
 ### 在终端进行执行命令
 
@@ -251,7 +251,7 @@ VSCode 中可视化方式提供的仓颉功能编译构建能力依赖 cjpm 工�
 
 开发者可以单击 .cj 文件编辑区的运行按钮来运行整个仓颉工程。
 
-![runCode](./images/runCode.PNG)
+![runCode](./images/runCode.png)
 
 若整个工程中配置的 `output-type` 为 `executable`，则会在终端面板打印运行结果，否则只会显示编译的结果。
 
@@ -261,7 +261,7 @@ VSCode 中可视化方式提供的仓颉功能编译构建能力依赖 cjpm 工�
 
 开发者可以单击 .cj 文件编辑区的锤子按钮来编译整个仓颉工程。
 
-![hammerButton](./images/hammerButton.PNG)
+![hammerButton](./images/hammerButton.png)
 
 单击锤子按钮执行的编译过程与运行按钮一致，也是结合当前的 `cjpm.toml` 和 `cjpm_build_args.json` 的配置来进行的。不同的是，若整个工程中配置的 `output-type` 为 `executable`，则运行按钮在编译完成后再运行整个工程，而锤子按钮只会编译工程，无后续运行动作。
 
@@ -271,15 +271,15 @@ VSCode 中可视化方式提供的仓颉功能编译构建能力依赖 cjpm 工�
 
   * 直接修改 `cjpm.toml` 和 `cjpm_build_args.json` 文件。
 
-![editOne](./images/editOne.PNG)
+![editOne](./images/editOne.png)
 
   * 使用快捷键 F1，或同时按下 Ctrl + Shift + P（macOS 系统为 Command + Shift + P）打开命令面板，在命令面板执行 `Cangjie: Edit Configuration (UI)` 命令打开可视化编辑的 UI 界面。
 
-![editTwo](./images/editTwo.PNG)
+![editTwo](./images/editTwo.png)
 
   * 单击编辑页面右上角的画笔按钮，跳转到可视化编辑的 UI 界面。
 
-![editThree](./images/editThree.PNG)
+![editThree](./images/editThree.png)
 
 对于工程文件中 `.vscode` 目录下的 `cjpm_build_args.json` 的配置，通过复选框或者输入框的形式确定编译要使用的参数，修改后会同步到 `cjpm_build_args.json` 文件中。
 
@@ -394,11 +394,11 @@ VSCode 中可视化方式提供的仓颉功能编译构建能力依赖 cjpm 工�
 
 导航栏视图呈现如下形式。
 
-![packageRequires](./images/packageRequires.PNG)
+![packageRequires](./images/packageRequires.png)
 
 开发者可以在其对应的导入方式子目录下导入工程需要的模块。在导航栏单击画笔进入 UI 界面。
 
-![packageRequireUI](./images/packageRequireUI.PNG)
+![packageRequireUI](./images/packageRequireUI.png)
 
 `ffi`：当前仓颉模块外部依赖 C 库，配置了依赖该库所需要的信息，包含名称和路径字段。资源管理器的视图栏中的 `CANGJIE LIBRARY` 栏，可以方便开发者添加这几类外部库。
 
@@ -410,7 +410,7 @@ VSCode 中可视化方式提供的仓颉功能编译构建能力依赖 cjpm 工�
 
 可以通过单击视图栏的编辑按钮，打开三方库导入的可视化界面来导入或删除三方库。
 
-![configLib](./images/configLib.PNG)
+![configLib](./images/configLib.png)
 
 以上删除和添加操作均同步到工程的 `module.json` 文件中。
 

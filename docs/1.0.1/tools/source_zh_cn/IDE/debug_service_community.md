@@ -43,7 +43,7 @@
 
 针对单文件调试，可以选中需要调试的仓颉源文件，右键选择 Cangjie: Build and Debug File，该操作会生成编译配置文件 `task.json` 和编译脚本，并且会根据 `task.json` 配置执行脚本，编译出可调试的二进制文件，然后启动调试。
 
-![start](./images/start_community.PNG)
+![start](./images/start_community.png)
 
 **调试手动编译的可执行文件**
 
@@ -134,7 +134,7 @@ remotePlatform| string| 远程调试时远程的平台，仅支持 remote-linux�
 
 当进程处于 stopped 状态时，可以在 VSCode 界面左侧查看断点、当前线程、堆栈信息和变量，支持编辑断点和修改变量。也可以在 Editor 窗口将鼠标悬停在变量名称上方查看变量值。支持在 TERMINAL 窗口查看被调试程序的输出信息。
 
-![debugInfo](./images/debugInfo.PNG)
+![debugInfo](./images/debugInfo.png)
 
 ## 表达式求值
 
@@ -150,11 +150,11 @@ remotePlatform| string| 远程调试时远程的平台，仅支持 remote-linux�
 
   * 在鼠标光标处单击右键选择 Run to Cursor。
 
-![runToCursor](./images/runToCursor.PNG)
+![runToCursor](./images/runToCursor.png)
 
   * 在源码视图右键选择 Open Disassembly View 进入汇编视图。
 
-![openDisassemblyView](./images/openDisassemblyView.PNG)
+![openDisassemblyView](./images/openDisassemblyView.png)
 
 ## 调试控制台
 
@@ -168,13 +168,13 @@ remotePlatform| string| 远程调试时远程的平台，仅支持 remote-linux�
     
     -exec n
 
-![debugconsoleCjdbcommand](./images/debugconsoleCjdbcommand.PNG)
+![debugconsoleCjdbcommand](./images/debugconsoleCjdbcommand.png)
 
 ### 查看变量
 
 在调试控制台中输入变量名称查看变量值：
 
-![debugconsoleVariable](./images/debugconsoleVariable.PNG)
+![debugconsoleVariable](./images/debugconsoleVariable.png)
 
 ## 反向调试
 
@@ -187,17 +187,17 @@ remotePlatform| string| 远程调试时远程的平台，仅支持 remote-linux�
 
 单击左下角齿轮图标，选择设置（Settings）选项，在搜索栏输入 cangjie，找到 Reverse Debug 选项，勾选 Enable reverse debug，开启程序调试历史停止点信息的自动记录。同时可以配置自动记录的线程个数、堆栈个数、变量作用域、复杂类型变量子变量的展开层数和子变量个数。修改配置后，需要重新启动仓颉调试。
 
-![reverseDebugConfig](./images/reverseDebugConfig.PNG)
+![reverseDebugConfig](./images/reverseDebugConfig.png)
 
 ### 工具栏
 
 单击顶部调试工具栏上的时钟图标进入反向调试模式，使用工具栏上正反向继续、正反向单步控制程序，查看历史记录的线程、堆栈、变量信息，如下图所示。
 
-![reverseDebugOpen](./images/reverseDebugOpen.PNG)
+![reverseDebugOpen](./images/reverseDebugOpen.png)
 
 单击顶部调试工具栏上的方块图标退出反向调试模式，调试会回到正向调试的最后停止点，如下图所示。
 
-![reverseDebugClose](./images/reverseDebugClose.PNG)
+![reverseDebugClose](./images/reverseDebugClose.png)
 
 ### 反向断点
 
@@ -213,15 +213,15 @@ remotePlatform| string| 远程调试时远程的平台，仅支持 remote-linux�
 
   1. 在仓颉源文件编辑器视图内右键选择 Cangjie: Add Reverse Breakpoint，为光标所在行设置一个反向断点。
 
-![lineReverseBreakpoint](./images/lineReverseBreakpoint.PNG)
+![lineReverseBreakpoint](./images/lineReverseBreakpoint.png)
 
   2. 在仓颉源文件上右键选择 Cangjie: Add Auto Reverse Breakpoints 插件会分析该文件内函数的入口和出口位置并自动设置反向断点。
 
-![fileReverseBreakpoint](./images/fileReverseBreakpoint.PNG)
+![fileReverseBreakpoint](./images/fileReverseBreakpoint.png)
 
   3. 在文件夹上右键选择 Cangjie: Add Auto Reverse Breakpoints 插件会分析该文件夹内仓颉源文件中的函数的入口和出口位置并自动设置反向断点。
 
-![folderReverseBreakpoint](./images/folderReverseBreakpoint.PNG)
+![folderReverseBreakpoint](./images/folderReverseBreakpoint.png)
 
 ### 时间线
 
@@ -273,7 +273,7 @@ remotePlatform| string| 远程调试时远程的平台，仅支持 remote-linux�
   1. 单击 `@Test/@TestCase` 声明行上的 run 按钮，运行该单元测试类/单元测试 case。
   2. 单击 `@Test/@TestCase` 声明行上的 debug 按钮，调试该单元测试类/单元测试 case。
 
-![unittest](./images/unittest.PNG)
+![unittest](./images/unittest.png)
 
 ## DAP 通信日志
 
