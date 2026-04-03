@@ -1,7 +1,7 @@
 playwright==1.40.0
 beautifulsoup4==4.12.2
 markdownify==0.14.1
-requests==2.32.4
+requests==2.33.0
 html2text==2020.1.16
 lxml==4.9.3
 aiohttp==3.13.3
