@@ -4,5 +4,5 @@ markdownify==0.14.1
 requests==2.33.0
 html2text==2020.1.16
 lxml==4.9.3
-aiohttp==3.13.3
+aiohttp==3.13.4
 aiofiles==23.2.0
